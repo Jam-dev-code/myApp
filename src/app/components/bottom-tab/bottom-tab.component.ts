@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bottom-tab',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomTabComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  goToHome() {
+    this.router.navigate(['/home']);
+  }
+  goToMenu() {
+    this.router.navigate(['/menu']);
+  }
+  goToContacts() {
+    this.router.navigate(['/contacts']);
+  }
 
 }
