@@ -18,7 +18,7 @@ export class MenuPage implements OnInit {
 
   ngOnInit() {
 
-    // Get the products from products.json file
+    // Get the products from products.json
     fetch('../../assets/data/products.json')
       .then(res => {
         // Convert data to json format

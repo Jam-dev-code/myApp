@@ -2,37 +2,51 @@
 	{
 		"id": "1",
 		"name": "Topshop Dress",
-		"price": "100",
-		"description": "Lorem ipsum",
-		"img_url": "Topshop.jpg",
-		"color": "black"
+		"price": 59.99,
+		"color": "Black",
+		"code": "15-0989",
+		"short_description": "Striking & Modern",
+		"long_description": "This sleeveless midi dress from Topshop is a beautiful and feminine piece that is perfect for any warm weather occasion. The dress features a flattering wrap style with a V-neckline, which is not only stylish but also helps to elongate your neck and create a flattering silhouette. The dress is made from a lightweight and breathable fabric, making it comfortable to wear even on the hottest days. The bright floral print is eye-catching and adds a pop of color to your wardrobe, while the ruffle hemline adds a playful and feminine touch. You can easily style this dress in a variety of ways to create different looks. For a casual daytime look, pair it with sandals or sneakers and a denim jacket. Alternatively, you can dress it up for a night out by adding heels and statement jewelry. This dress is versatile enough to be worn for a variety of occasions, including casual outings, brunch, parties, and summer events. It's also easy to pack for travel, making it a great option for vacations and weekend getaways.",
+		"img_url": "Topshop.jpg"
 	},
 	{
 		"id": "2",
 		"name": "Zara",
-		"price": "50",
-		"description": "Lorem ipsum",
+		"price": 39.99,
+		"color": "Blue-Green",
+		"code": "17-8122",
+		"short_description": "Short and Chic",
+		"long_description": "These high-waisted wide-leg pants from Zara are a must-have for any fashion-savvy individual. Made from a lightweight fabric, they're perfect for warmer weather and offer a comfortable and breezy fit. The navy blue color is a classic and versatile choice, making them easy to pair with a variety of tops and shoes. The high-waisted design of these pants is not only trendy but also helps to elongate your legs, creating a flattering silhouette. The wide-leg cut is also very in style and adds a touch of sophistication to any outfit. You can dress these pants up for a more professional look by pairing them with a blouse and heels. Alternatively, you can wear them with sandals and a t-shirt for a more casual, relaxed look. The options are endless, and you can easily create a variety of outfits with these pants. These pants are made from high-quality materials and are designed to be durable and long-lasting. Whether you're wearing them for work or play, you can be sure that they'll hold up well and continue to look great.",
 		"img_url": "Zara.jpg"
 	},
 	{
 		"id": "3",
-		"name": "Test 3",
-		"price": "100",
-		"description": "Lorem ipsum",
-		"img_url": ""
+		"name": "Penshoppe",
+		"price": 49.99,
+		"color": "Nude",
+		"code": "23-6211",
+		"short_description": "Unique and Stylish",
+		"long_description": "This dress from Penshoppe is perfect for any occasion, thanks to its versatile style and comfortable fit. The classic light blue wash gives it a timeless appeal, while the relaxed fit ensures that it's easy to wear and move in. The dress comes with two chest pockets and two side pockets, which not only add a touch of style but also offer added functionality for storing small items like keys or a phone. You can dress it down by pairing it with jeans for a casual look, or dress it up with a pair of boots for a more formal outfit. The possibilities are endless, making this dress a great addition to any wardrobe made from high-quality materials, this dress is designed to be durable and long-lasting, ensuring that you can enjoy wearing it for years to come. Overall, if you're looking for a stylish and versatile dress that you can wear in many different ways, this one from Penshoppe is definitely worth considering.",
+		"img_url": "Penshoppe.png"
 	},
 	{
 		"id": "4",
-		"name": "Test 4",
-		"price": "100",
-		"description": "Lorem ipsum",
-		"img_url": ""
+		"name": "H&M",
+		"price": 17.99,
+		"color": "Pale Rose",
+		"code": "18-1944",
+		"short_description": "Classic Pieces with Twist",
+		"long_description": "This pinky girly dress from H&M is a great choice for those looking for a comfortable and versatile dress. Made from soft and stretchy fabric, it offers a comfortable and flattering fit that hugs your curves in all the right places. The round neckline and short sleeves make it perfect for warm weather, while the light gray color is versatile and easy to pair with a variety of accessories and shoes. This dress can be dressed up for a night out by pairing it with heels and statement jewelry. Alternatively, you can keep it casual by pairing it with sneakers or sandals. The options are endless, making this dress a great addition to any wardrobe. The dress is made from high-quality materials and is designed to be durable and long-lasting. You can be sure that it will hold up well even after multiple wears and washes. Overall, if you're looking for a comfortable and versatile dress that you can wear in many different ways, this pinky girly dress from H&M is definitely worth considering.",
+		"img_url": "H_M.png"
 	},
 	{
 		"id": "5",
-		"name": "Test 5",
-		"price": "100",
-		"description": "Lorem ipsum",
-		"img_url": ""
+		"name": "Badgley Mischka",
+		"price": 550,
+		"color": "",
+		"code": "06-7931",
+		"short_description": "Form-Fitting Silhouette",
+		"long_description": "This stunning Badgley Mischka evening gown is a show-stopping piece that is perfect for any special occasion. The gown is covered in shimmering sequins that catch the light beautifully and add a touch of glamour to the look. The dress features a flattering sweetheart neckline, which is both feminine and sophisticated. The slim fit of the dress hugs your curves in all the right places, while the long, flowing skirt adds a touch of drama and elegance to the overall look. The deep navy blue color is a classic and versatile choice, making it easy to pair with a variety of accessories and shoes. You can easily dress this gown up with strappy heels and a clutch for a head-turning ensemble that will make you feel like a true Hollywood star. The gown is made from high-quality materials and is designed to be both durable and comfortable. You can be sure that it will hold up well even after multiple wears and washes.",
+		"img_url": "Badley-Mischka.png"
 	}
 ]

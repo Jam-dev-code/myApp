@@ -9,45 +9,33 @@
 
 <ion-content class="ion-padding">
   <div class="ion-text-center">
+    <!-- id_1 -->
     <img src="../../assets/{{ product.img_url }}" class="ion-img">
   </div>
   <ion-card>
     <ion-card-header>
-      
-      <!-- Name -->
-      <ion-card-title 
-        class="ion-text-center" 
-        style="color: rgb(59, 202, 228);"
-      >{{ product.name }}</ion-card-title>
-      
-      <!-- Price -->
-      <ion-card-subtitle 
-        class="ion-text-center" 
-        style="color: rgb(228, 236, 111);"
-      >Price: ${{ product.price }}</ion-card-subtitle>
 
+      <!-- Name -->
+      <ion-card-title class="ion-text-center" style="color: rgb(216, 167, 104);">{{ product.name }}</ion-card-title>
+
+      <!-- Price -->
+      <ion-card-subtitle class="ion-text-center" style="color: rgb(212, 236, 103);">Price: ${{ product.price }}
+
+      </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-
+ 
       <!-- Dress Color -->
       <p class="ion-text-justify">
-        <strong style="color: rgb(255, 255, 255);">Dress Color:</strong>
-        Black
+        <strong style="color: rgba(196, 134, 158, 0.836);">Dress Color: {{ product.color }}</strong>
+      </p>
+      <!-- Dress Code -->
+      <p class="ion-text-justify">
+        <strong style="color: rgba(196, 134, 158, 0.836);">Dress Code: {{ product.code }}</strong>
       </p>
 
       <!-- Long Description -->
-      <p class="ion-text-center ion-text-justify">This sleeveless midi dress from Topshop features a V-neckline and a
-        flattering wrap style. It's made from a lightweight and breathable fabric, making it perfect for warm weather.
-        The bright floral print and ruffle hemline add a feminine touch. Pair it with sandals for a casual look or dress
-        it up with heels for a night out.</p>
-
-      <!-- Dress Code -->
-      <p class="ion-text-justify">
-        <strong style="color: rgb(255, 255, 255);">Dress Code:</strong>
-        This dress is versatile and can be worn for a variety of occasions, including casual outings, brunch, parties,
-        and summer events. For a casual look, pair it with sandals or sneakers. To dress it up, add heels and statement
-        jewelry.
-      </p>
+      <p class="ion-text-center ion-text-justify">{{ product.long_description}}</p>
     </ion-card-content>
   </ion-card>
 </ion-content>
