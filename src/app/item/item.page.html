@@ -1,28 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="ion-text-center">Topshop</ion-title>
+    <ion-title class="ion-text-center">{{ product.name }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <div class="ion-text-center">
-    <img src="../../assets/Topshop.jpg" class="ion-img">
+    <img src="../../assets/{{ product.img_url }}" class="ion-img">
   </div>
   <ion-card>
     <ion-card-header>
-      <ion-card-title class="ion-text-center" style="color: rgb(59, 202, 228);">Floral Print Wrap Midi
-        Dress</ion-card-title>
-      <ion-card-subtitle class="ion-text-center" style="color: rgb(228, 236, 111);">Price: $59.99</ion-card-subtitle>
+      
+      <!-- Name -->
+      <ion-card-title 
+        class="ion-text-center" 
+        style="color: rgb(59, 202, 228);"
+      >{{ product.name }}</ion-card-title>
+      
+      <!-- Price -->
+      <ion-card-subtitle 
+        class="ion-text-center" 
+        style="color: rgb(228, 236, 111);"
+      >Price: ${{ product.price }}</ion-card-subtitle>
+
     </ion-card-header>
     <ion-card-content>
+
+      <!-- Dress Color -->
       <p class="ion-text-justify">
         <strong style="color: rgb(255, 255, 255);">Dress Color:</strong>
         Black
       </p>
+
+      <!-- Long Description -->
       <p class="ion-text-center ion-text-justify">This sleeveless midi dress from Topshop features a V-neckline and a
         flattering wrap style. It's made from a lightweight and breathable fabric, making it perfect for warm weather.
         The bright floral print and ruffle hemline add a feminine touch. Pair it with sandals for a casual look or dress
         it up with heels for a night out.</p>
+
+      <!-- Dress Code -->
       <p class="ion-text-justify">
         <strong style="color: rgb(255, 255, 255);">Dress Code:</strong>
         This dress is versatile and can be worn for a variety of occasions, including casual outings, brunch, parties,

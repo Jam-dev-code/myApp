@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +8,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
+  
+  // Properties
+  products: any;
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  // Methods
 
   ngOnInit() {
+
+    // Get the products from products.json file
+    fetch('../../assets/data/products.json')
+      .then(res => {
+        // Convert data to json format
+        return res.json()
+      })
+      .then(res => {
+        // Assign data result to products property
+        this.products = res;
+      });
   }
 
+  // Custom Methods
+
+  goToItem(id: any) {
+    this.route.navigate(['/main/products/' + id]);
+  }
 }

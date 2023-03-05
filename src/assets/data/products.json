@@ -1,0 +1,38 @@
+[
+	{
+		"id": "1",
+		"name": "Topshop Dress",
+		"price": "100",
+		"description": "Lorem ipsum",
+		"img_url": "Topshop.jpg",
+		"color": "black"
+	},
+	{
+		"id": "2",
+		"name": "Zara",
+		"price": "50",
+		"description": "Lorem ipsum",
+		"img_url": "Zara.jpg"
+	},
+	{
+		"id": "3",
+		"name": "Test 3",
+		"price": "100",
+		"description": "Lorem ipsum",
+		"img_url": ""
+	},
+	{
+		"id": "4",
+		"name": "Test 4",
+		"price": "100",
+		"description": "Lorem ipsum",
+		"img_url": ""
+	},
+	{
+		"id": "5",
+		"name": "Test 5",
+		"price": "100",
+		"description": "Lorem ipsum",
+		"img_url": ""
+	}
+]

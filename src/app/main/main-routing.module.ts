@@ -5,6 +5,7 @@ import { MainPage } from './main.page';
 import { HomePage } from '../home/home.page';
 import { MenuPage } from '../menu/menu.page';
 import { ContactsPage } from '../contacts/contacts.page';
+import { ItemPage } from '../item/item.page';
 
 const routes: Routes = [
   {
@@ -16,13 +17,17 @@ const routes: Routes = [
         component: HomePage
       },
       {
-        path: 'menu',
+        path: 'products',
         component: MenuPage
+      },
+      {
+        path: 'products/:id',
+        component: ItemPage
       },
       {
         path: 'contacts',
         component: ContactsPage
-      }
+      },
     ]
   }
 ];

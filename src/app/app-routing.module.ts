@@ -8,42 +8,33 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'menu',
+    path: 'products',
     loadChildren: () => import('./menu/menu.module').then(m => m.MenuPageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
-  },
-  {
-    path: 'about',
-    loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
-  },
-  {
-    path: 'item',
+    path: 'products/:id',
     loadChildren: () => import('./item/item.module').then(m => m.ItemPageModule)
-  },
-  {
-    path: 'item',
-    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
-  },
-  {
-    path: 'items1',
-    loadChildren: () => import('./items1/items1.module').then( m => m.Items1PageModule)
   },
   {
     path: 'contacts',
     loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
-  },
-  {
-    path: 'main',
-    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
-  },
-
+  }
+  // {
+  //   path: 'login',
+  //   loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  // },
+  // {
+  //   path: 'about',
+  //   loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
+  // },
 ];
 
 @NgModule({

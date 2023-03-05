@@ -5,106 +5,27 @@
 </ion-header>
 
 <ion-content>
-  <!--Item 1-->
-  <ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <img src="../../assets/Topshop.jpg" alt="Topshop Dress">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Topshop</ion-card-title>
-            <ion-card-subtitle>$59.99</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Chic and stylish dress.</p>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
 
-  <!--Item 2-->
-  <ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <img src="../../assets/Zara.jpg" alt="Zara Dress">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Zara</ion-card-title>
-            <ion-card-subtitle>$59.99</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Trendy and fashionable dress</p>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
-
-  <!--Item 3-->
-  <ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <img src="../../assets/Penshoppe.png" alt="Penshoppe Dress">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Penshoppe</ion-card-title>
-            <ion-card-subtitle>$100</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Luxurious and elegant dress.</p>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
-
-  <!--Item 4-->
-  <ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <img src="../../assets/H_M.png" alt="H&M Dress">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>H&M</ion-card-title>
-            <ion-card-subtitle>$200</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Stylish and versatile dress</p>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
-
-  <!--Item 5-->
-  <ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <img src="../../assets/Badley-Mischka.png" alt="Badley Mischka Dress">
-        </ion-col>
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Badley Mischka</ion-card-title>
-            <ion-card-subtitle>$90</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Stunning and glamorous dress</p>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
-
+  <div *ngFor="let product of products">
+    <ion-card routerLink="/main/products/{{ product.id }}">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <img src="../../assets/{{ product.img_url }}" alt="{{ product.name }}">
+          </ion-col>
+          <ion-col size="8">
+            <ion-card-header>
+              <ion-card-title>{{ product.name }}</ion-card-title>
+              <ion-card-subtitle>${{ product.price }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>{{ product.description }}</p>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
 <ion-content>
 
 
